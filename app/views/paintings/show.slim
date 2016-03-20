@@ -4,21 +4,23 @@
       - if @painting.previous
         a.next-prev href="#{@base_url}/detail/#{@painting.previous}" &#10094;
     .col-md-7
-      img.detail-img src="#{@painting.fullsize_url}"
+      .detail-img
+        img src="#{@painting.fullsize_url}"
     .col-md-3
-      .title #{@painting.name}
-      - if @painting.medium
-        div #{@painting.medium.capitalize}
-      - if @painting.height
-        div #{@painting.height}" x #{@painting.width}"
-      - if @painting.price
-        - if @painting.category == 'notecard'
-          div 5 for $#{@painting.price}
-        - else
-          div $#{@painting.price}
-      - if @painting.sold
-        div
-          i Sold
+      .detail-text
+        .title #{@painting.name}
+        - if @painting.medium
+          div #{@painting.medium.capitalize}
+        - if @painting.height
+          div #{@painting.height}" x #{@painting.width}"
+        - if @painting.price
+          - if @painting.category == 'notecard'
+            div 5 for $#{@painting.price}
+          - else
+            div $#{@painting.price}
+        - if @painting.sold
+          div
+            i Sold
       a href="#{@base_url}/gallery##{@painting.category.downcase}" &#8592 return
     .col-md-1
       - if @painting.next

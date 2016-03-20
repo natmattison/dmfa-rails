@@ -14,3 +14,33 @@
 #content {
   margin-top: 80px;
 }
+
+.about-img img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  margin: 10px;
+  width: 400px;
+}
+
+.detail-img img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail-text {
+  
+}
+
+.next-prev {
+  font-size: 36px;
+  color: #777;
+  position: relative;
+  top: 250px;
+}

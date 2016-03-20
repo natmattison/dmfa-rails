@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    link href='http://fonts.googleapis.com/css?family=Satisfy|Open+Sans' rel='stylesheet' type='text/css'
+    title Debbie Mattison Fine Art
+    = stylesheet_link_tag "style.css"
+    = stylesheet_link_tag "landing-page.css"
+
+  body
+    nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation"
+      div class="container topnav"
+        div class="navbar-header"
+          button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            span class="sr-only" Toggle navigation
+            span class="icon-bar"
+            span class="icon-bar"
+            span class="icon-bar"
+          a class="navbar-brand topnav" href="#"Debbie Mattison Fine Art
+        div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"
+          ul class="nav navbar-nav navbar-right"
+            li
+              a href="about" About
+            li
+              a href="gallery" Gallery
+            li
+              a href="contact" Contact
+            li
+              a href="https://facebook.com/debbiemattisonfineart" Facebook
+
+    #content
+      == yield
+
+    #footer

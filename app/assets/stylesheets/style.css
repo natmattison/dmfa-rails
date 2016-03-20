@@ -1,0 +1,16 @@
+.painting-thumbnail img {
+  height: 250px;
+  margin: 10px;
+}
+
+.sold {
+  display: inline-block;
+}
+
+#sidebar {
+  position: fixed;
+}
+
+#content {
+  margin-top: 80px;
+}

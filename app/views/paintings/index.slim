@@ -1,0 +1,24 @@
+.container
+  .row
+    .col-md-2
+      #sidebar
+        - @categories.each do |c|
+          p
+            a href="##{c.downcase}"
+              - if c == 'notecard'
+                | #{c.titleize}s
+              - else
+                | #{c.titleize}
+    .col-md-10
+      - @paintings_by_category.each do |c, paintings|
+        div id="#{c.downcase}"
+          - if c == 'notecard'
+            h4 #{c.titleize}s
+          - else
+            h4 #{c.titleize}
+          .row
+            - paintings.each do |p|
+              a.painting-thumbnail href="#{@base_url}/detail/#{p.id}"
+                img src="#{p.thumbnail_url}"
+              - if p.sold
+                .sold

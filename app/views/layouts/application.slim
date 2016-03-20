@@ -10,7 +10,7 @@ html
     = stylesheet_link_tag "landing-page.css"
 
   body
-    nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation"
+    nav class="navbar navbar-default topnav" role="navigation"
       div class="container topnav"
         div class="navbar-header"
           button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -18,15 +18,17 @@ html
             span class="icon-bar"
             span class="icon-bar"
             span class="icon-bar"
-          a class="navbar-brand topnav" href="#{@base_url}/" Debbie Mattison Fine Art
+          a class="navbar-brand topnav" href="#{@base_url}/"
+            .navbar-dm Debbie Mattison
+            .navbar-fa Fine Art
         div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"
           ul class="nav navbar-nav navbar-right"
             li
-              a href="about" About
+              a href="#{@base_url}/about" About
             li
-              a href="gallery" Gallery
+              a href="#{@base_url}/gallery" Gallery
             li
-              a href="contact" Contact
+              a href="#{@base_url}/contact" Contact
             li
               a href="https://facebook.com/debbiemattisonfineart" Facebook
 

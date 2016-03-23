@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  background: #F8F8F8;
 }
 
 .navbar {
@@ -14,27 +15,31 @@ body {
 
 .navbar-brand {
   color: #f5f5f5!important;
-  height: 80px;
+  top: -15px;
+  font-weight: normal;
+  position: relative;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
 }
 
 .navbar-nav>li>a {
-  color: #f5f5f5!important;
+  color: rgba(245, 245, 245, 0.9)!important;
 }
 
 .navbar-nav>li>a:hover {
-  color: rgba(245, 245, 245, 0.85)!important;
+  color: rgba(255, 255, 255, 1)!important;
 }
 
-
 .navbar-dm {
-  font-size: 24px;
+  font-size: 22px;
+  margin: 2px;
 }
 
 .navbar-fa {
-  font-family: "Satisfy", serif;
-  font-size: 24px;
-  position: relative;
-  left: 20px;
+  font-family: "Satisfy", cursive, serif;
+  margin: 10px 5px 5px 5px;
+  float: right;
+  font-size: 28px;
+  padding-right: 15px;
 }
 
 img.home-page-img {
@@ -45,7 +50,11 @@ img.home-page-img {
 .home-page-text {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;  
+  width: 70%;
+}
+
+a[name=services]:hover {
+  text-decoration: none;
 }
 
 .painting-thumbnail img {
@@ -59,6 +68,7 @@ img.home-page-img {
 
 #sidebar {
   position: fixed;
+  top: 110px;
 }
 
 .intro-header {
@@ -68,12 +78,14 @@ img.home-page-img {
 .about-img img {
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
+  float: right;
 }
 
 .about-text {
-  width: 400px;
+  width: 440px;
+  margin: 30px auto;
+  float: left;
 }
 
 .detail-img img {
@@ -93,6 +105,10 @@ img.home-page-img {
   color: #777;
   position: relative;
   top: 250px;
+}
+
+.next-prev:hover {
+  text-decoration: none;
 }
 
 .title {

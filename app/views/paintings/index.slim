@@ -13,5 +13,6 @@
             - paintings.each do |p|
               a.painting-thumbnail href="#{@base_url}/detail/#{p.id}"
                 img src="#{p.thumbnail_url}"
-              - if p.sold
-                .sold
+                  .sold-container
+                    - if p.sold
+                      .sold

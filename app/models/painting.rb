@@ -1,5 +1,5 @@
 class Painting < ActiveRecord::Base
-  CATEGORIES = ['portrait', 'landscape', 'animal', 'still life', 'study', 'notecard']
+  CATEGORIES = ['animal', 'landscape', 'portrait', 'still life', 'study', 'notecard']
 
   def sold?
     price == nil

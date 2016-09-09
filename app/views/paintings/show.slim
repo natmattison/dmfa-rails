@@ -17,7 +17,8 @@
           - if @painting.category == 'notecard'
             div 5 for $#{@painting.price}
           - else
-            div $#{@painting.price}
+            div
+              i Price on request
         - if @painting.sold
           div
             i Sold

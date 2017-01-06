@@ -135,3 +135,11 @@ a[name=services]:hover {
   width: 10px;
   height: 10px;
 }
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.event-img {
+  padding-top: 45px;
+}

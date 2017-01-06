@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   get 'reproductions' => 'home#reproductions'
   get 'gallery' => 'paintings#index'
   get 'detail/:id' => 'paintings#show'
+  get 'workshops' => 'home#workshops'
+  get 'lessons' => 'home#lessons'
 
 end

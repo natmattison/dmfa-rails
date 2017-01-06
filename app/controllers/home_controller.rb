@@ -39,4 +39,10 @@ class HomeController < ApplicationController
     
   end
 
+  def workshops
+  end
+  
+  def lessons
+  end
+
 end

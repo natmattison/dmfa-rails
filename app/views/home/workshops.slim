@@ -14,7 +14,8 @@
     .col-md-2
     .col-md-4
       .event-img
-        img src="https://dl.dropboxusercontent.com/s/q8grna97kpqcssg/Yellowstone-Falls-wm.jpg?dl=0"
+        a.fancybox rel="group" href="https://dl.dropboxusercontent.com/s/q8grna97kpqcssg/Yellowstone-Falls-wm.jpg?dl=0"
+          img src="https://dl.dropboxusercontent.com/s/q8grna97kpqcssg/Yellowstone-Falls-wm.jpg?dl=0" alt=""
     .col-md-6
       .about-text
         h4 Yellowstone Falls
@@ -27,7 +28,8 @@
     .col-md-2
     .col-md-4
       .event-img
-        img src="https://dl.dropboxusercontent.com/s/9n7b9njk8ug63pu/Restful-Harbor-wm.jpg?dl=0"
+        a.fancybox rel="group" href="https://dl.dropboxusercontent.com/s/9n7b9njk8ug63pu/Restful-Harbor-wm.jpg?dl=0"
+          img src="https://dl.dropboxusercontent.com/s/9n7b9njk8ug63pu/Restful-Harbor-wm.jpg?dl=0" alt=""
     .col-md-6
       .about-text
         h4 Restful Harbor
@@ -56,3 +58,8 @@
         p “Just want to say thank you for having such a good and personable artist here in the northwest. I loved the class and Debbie was very helpful with her instructions.. Hopefully I can take more classes from her. 
         p Thank you and God continue to bless your endeavors”.
         i - Nancy
+
+javascript:
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });

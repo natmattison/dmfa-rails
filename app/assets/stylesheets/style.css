@@ -140,6 +140,10 @@ a[name=services]:hover {
   margin-bottom: 20px;
 }
 
-.event-img {
-  padding-top: 45px;
+event-img img {
+  width: 350px;
+}
+
+event-row {
+  margin: 20px 0px;
 }

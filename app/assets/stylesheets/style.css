@@ -140,10 +140,14 @@ a[name=services]:hover {
   margin-bottom: 20px;
 }
 
-event-img img {
+.event-img img {
   width: 350px;
 }
 
-event-row {
-  margin: 20px 0px;
+.event-img > img {
+  width: 350px;
+}
+
+.event-row {
+  margin-top: 20px;
 }

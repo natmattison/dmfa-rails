@@ -141,13 +141,13 @@ a[name=services]:hover {
 }
 
 .event-img img {
-  width: 350px;
+  height: 250px;
 }
 
-.event-img > img {
-  width: 350px;
+.event-img {
+  text-align: center;
 }
 
 .event-row {
-  margin-top: 20px;
+  margin-top: 40px;
 }

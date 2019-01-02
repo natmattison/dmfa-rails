@@ -5,7 +5,7 @@ class PaintingsController < ApplicationController
     @paintings_by_category = {}
 
     @categories.each do |c|
-      @paintings_by_category[c] = Painting.where('category ILIKE ?', '%c%')
+      @paintings_by_category[c] = Painting.where('category ILIKE ?', "%#{c}%")
     end
 
     render :index

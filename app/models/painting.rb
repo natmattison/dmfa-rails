@@ -6,10 +6,10 @@ class Painting < ActiveRecord::Base
   end
 
   def next
-    Painting.where('id > ?', self.id).pluck(:id).min
+    Painting.where(category: category).where('created_at > ?', created_at).order(:created_at).first&.id
   end
   
   def previous
-    Painting.where('id < ?', self.id).pluck(:id).max
+    Painting.where(category: category).where('created_at < ?', created_at).order(:created_at).last&.id
   end
 end
